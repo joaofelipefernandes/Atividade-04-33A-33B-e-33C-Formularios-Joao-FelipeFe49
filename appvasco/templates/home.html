@@ -1,0 +1,80 @@
+<DOCTYPE! html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' href="{% static'css/style.css' %)">
+</head>
+
+<body>
+  <h1>João Felipe Dodsworth Martins Froment Fernandes</h1>
+  <h2>INFO VASCO</h2>
+  <h3>"As notícias mais recentes do Clube de Regatas Vasco da Gama"</h3>
+  <p> <u>O site conta com uma vasta gama de jornalistas que trabalham 24 horas buscando e apurando notícias sobre o clube.</u> Sendo o lugar ideal para o fanátio trocedor que não quer perder uma informação sequer sobre <b>o seu time preferido</b>.
+  Link para site parceiro: <a href="https://ge.globo.com/futebol/times/vasco/" target="_blank">Vasco ge</a> </p>
+  <div class="blue-center">
+    <p> <u>CONTRATAÇÃO DO ANO</u>: <i>Dimitri Payet</i> desembarca no Rio de Janeiro.</p>
+  <div><img src=https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/08/Payet-Vasco-e1692182112690.jpg?w=1200&h=900&crop=1 width="400"></div>
+    </div>
+
+  <h3>Melhores jogadores do time:
+    <ol>
+      <li> Pablo Vegetti </li>
+      <li> Paulinho Paula</li>
+      <li> Léo Pelé </li>
+      <li> Lucas Piton</li>
+      <li> Luca Orellano</li>
+    </ol>
+    {% for Jogadores in Jogadores %}
+    <li> {{Jogadores.name}} 
+      <a> href = "/player/update/{{player.id}}" >Atualizar </a>
+      <a> href = "/player/delete/{{player.id}}" >Deletar </a>
+    
+    </li>
+    {% endfor %}
+  </h3>
+  <h3> Principais Contratações da janela:
+  <a>href= "/player"> Adicionar novo jogador </a>
+    <ul>
+      <li> Dimitri Payet</li>
+      <li> Pablo Vegetti</li>
+      <li> Paulinho Paula</li>
+      <li> Bruno Praxedes</li>
+      <li> Gary Medel </li>
+    
+    </ul>
+  </h3>
+<h4> <b>Artilheiros do time no ano: </b></h4>
+<table>
+  <tr>
+    <th> Jogador</th>
+    <th> Gols</th>
+  </tr>
+  <tr>
+  <td> Pedro Raul</td>
+  <td>9</td>
+  </tr>
+  <tr>
+    <td> Gabriel Pec</td>
+    <td> 8</td>
+  </tr>
+  <tr>
+    <td> Jair</td>
+    <td> 4</td>
+  </tr>
+  <tr> 
+    <td> Alex Texeira</td>
+    <td> 3</td>
+  </tr>
+  <tr>
+    <td> Nenê</td>
+    <td> 2</td>
+  </tr>
+</table>
+  <link rel='stylesheet' href="{% static'css/style.css' %)">
+</body>
+
+</html>
